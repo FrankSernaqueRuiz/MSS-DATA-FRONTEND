@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSS-DATA | Ingeniería de Software, Datos y Soluciones Digitales</title>
+  <meta name="description" content="Desarrollo de software a medida, arquitectura de datos y soluciones cloud de alto impacto para potenciar empresas innovadoras.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <div class="navbar-wrapper" id="navbarWrapper">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="#hero" class="brand">
+          <div class="brand-icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M16 18l6-6-6-6"></path>
+              <path d="M8 6l-6 6 6 6"></path>
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span>MSS</span><span>-DATA</span>
+            <span class="brand-badge">TECH</span>
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active" data-i18n="navHome">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link" data-i18n="navServices">Servicios</a></li>
+          <li><a href="#nosotros" class="nav-link" data-i18n="navAbout">Nosotros</a></li>
+          <li><a href="#capacidades" class="nav-link" data-i18n="navFeatures">Capacidades</a></li>
+          <li><a href="#proyectos" class="nav-link" data-i18n="navProjects">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link" data-i18n="navContact">Contacto</a></li>
+        </ul>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <!-- Language Selector Button -->
+          <button class="btn-lang-trigger" id="langTriggerBtn" aria-label="Cambiar Idioma">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span class="lang-flag-label" id="currentLangLabel">ES</span>
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+
+          <!-- CTA Button -->
+          <a href="#contacto" class="btn-cta" data-i18n="navCta">Cotizar Proyecto</a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Menu">
+            <svg class="icon" style="width: 26px; height: 26px;" viewBox="0 0 24 24">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-grid-pattern"></div>
+    <div class="container">
+      <div class="hero-layout">
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span class="hero-badge-dot"></span>
+            <span data-i18n="heroBadge">Ingeniería de Software & Proyectos Digitales</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="heroTitlePart1">Construimos software sólido que impulsa el</span> 
+            <span class="highlight" data-i18n="heroTitleHighlight">crecimiento empresarial</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="heroDesc">
+            En MSS-DATA transformamos requerimientos técnicos complejos en productos digitales escalables, arquitecturas de datos seguras y aplicaciones web y móviles de alto rendimiento.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn-primary-hero">
+              <span data-i18n="heroCtaPrimary">Iniciar Proyecto</span>
+              <svg class="icon" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#capacidades" class="btn-secondary-hero">
+              <svg class="icon" viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span data-i18n="heroCtaSecondary">Ver Capacidades</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number" data-i18n="heroMetric1Value">99.8%</span>
+              <span class="metric-label" data-i18n="heroMetric1Label">Disponibilidad en Producción</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number" data-i18n="heroMetric2Value">+85</span>
+              <span class="metric-label" data-i18n="heroMetric2Label">Proyectos Implementados</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number" data-i18n="heroMetric3Value">100%</span>
+              <span class="metric-label" data-i18n="heroMetric3Label">Código Limpio & Documentado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Perspective Device Mockup (Phone / Console UI) -->
+        <div class="hero-visual">
+          <div class="device-showcase-container">
+            
+            <!-- Floating Badge Top Right -->
+            <div class="floating-pill-badge pill-top-right">
+              <div class="pill-icon-wrap">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size: 0.7rem; color: #64748b;" data-i18n="heroPreviewStatus">Sistemas Operativos</div>
+                <div style="font-weight: 700; color: #10b981;">100% Online</div>
+              </div>
+            </div>
+
+            <!-- Main Phone Frame -->
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="phone-notch">
+                  <div class="phone-speaker"></div>
+                </div>
+
+                <div class="screen-header">
+                  <div class="screen-brand">
+                    <svg class="icon" style="width: 16px; height: 16px; color: #a855f7;" viewBox="0 0 24 24">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span data-i18n="heroPreviewTitle">MSS Data Core</span>
+                  </div>
+                  <span class="screen-status-badge">v2.4 LTS</span>
+                </div>
+
+                <div class="screen-body">
+                  <div class="screen-metric-card">
+                    <div class="screen-metric-title" data-i18n="heroPreviewMetricUptime">Tiempo de Actividad</div>
+                    <div class="screen-metric-val">
+                      99.98%
+                      <span class="screen-metric-sub">+0.04% vs SLA</span>
+                    </div>
+
+                    <div class="screen-chart-bars">
+                      <div class="chart-bar" style="height: 40%;"></div>
+                      <div class="chart-bar" style="height: 65%;"></div>
+                      <div class="chart-bar" style="height: 50%;"></div>
+                      <div class="chart-bar" style="height: 80%;"></div>
+                      <div class="chart-bar" style="height: 95%;"></div>
+                      <div class="chart-bar active" style="height: 100%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="screen-terminal-box">
+                    <div class="term-line-ok">$ mss-pipeline deploy --env=prod</div>
+                    <div class="term-line-success">> Build verified: 0 vulnerabilities</div>
+                    <div class="term-line-success">> Microservices synchronized (24ms)</div>
+                    <div style="color: #64748b;">> Real-time streaming operational</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="floating-pill-badge pill-bottom-left">
+              <div class="pill-icon-wrap" style="background: #ecfdf5; color: #10b981;">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.8rem; color: #0f172a;" data-i18n="heroPreviewDeploy">Despliegue Continuo</div>
+                <div style="font-size: 0.68rem; color: #64748b;" data-i18n="heroPreviewMetricSec">Cifrado TLS 1.3</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Quick Highlights (3 Cards Overlapping Bottom Hero)
+       ========================================================================== -->
+  <section class="highlights-section" id="servicios">
+    <div class="container">
+      <div class="highlights-grid">
+        
+        <!-- Card 1 -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <svg class="icon" style="width: 28px; height: 28px;" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="highlight-title" data-i18n="card1Title">Desarrollo a Medida</h3>
+          <p class="highlight-desc" data-i18n="card1Desc">
+            Aplicaciones web y móviles concebidas con arquitecturas modulares, escalables y código de alta calidad.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <svg class="icon" style="width: 28px; height: 28px;" viewBox="0 0 24 24">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </div>
+          <h3 class="highlight-title" data-i18n="card2Title">Monitoreo y Métricas</h3>
+          <p class="highlight-desc" data-i18n="card2Desc">
+            Control en tiempo real, observabilidad activa y detección temprana de fallos para máxima disponibilidad.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="highlight-card">
+          <div class="highlight-icon-box">
+            <svg class="icon" style="width: 28px; height: 28px;" viewBox="0 0 24 24">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+            </svg>
+          </div>
+          <h3 class="highlight-title" data-i18n="card3Title">Arquitectura Cloud</h3>
+          <p class="highlight-desc" data-i18n="card3Desc">
+            Infraestructura serverless y contenedores optimizados para costos, seguridad y rendimiento continuo.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="aboutTag">Acerca de MSS-DATA</span>
+        <h2 class="section-title" data-i18n="aboutTitle">Ingeniería aplicada con enfoque en resultados medibles</h2>
+        <div class="section-divider">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+        <p class="section-sub" data-i18n="aboutSub">
+          Diseñamos ecosistemas tecnológicos que soportan las operaciones críticas de tu organización.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Code & Metrics Visual Box -->
+        <div class="about-visual">
+          <div class="about-canvas-card">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+              </div>
+              <span class="code-filename">mss-architecture.ts</span>
+              <span style="font-size: 0.7rem; color: #64748b;">TypeScript</span>
+            </div>
+
+            <pre class="code-snippet"><code><span class="code-keyword">interface</span> <span class="code-func">ProjectArchitecture</span> {
+  client: <span class="code-str">'Enterprise Solutions'</span>;
+  stack: [<span class="code-str">'Next.js'</span>, <span class="code-str">'Node.js'</span>, <span class="code-str">'PostgreSQL'</span>];
+  slaUptime: <span class="code-num">99.99</span>;
+  securityTier: <span class="code-str">'Zero-Trust'</span>;
+}
+
+<span class="code-keyword">export async function</span> <span class="code-func">deployPlatform</span>() {
+  <span class="code-comment">// Automatización CI/CD con pruebas unitarias</span>
+  <span class="code-keyword">const</span> status = <span class="code-keyword">await</span> pipeline.execute({
+    mode: <span class="code-str">'production'</span>,
+    cache: <span class="code-str">'distributed'</span>,
+    zeroDowntime: <span class="code-num">true</span>
+  });
+  <span class="code-keyword">return</span> status.isHealthy;
+}</code></pre>
+          </div>
+
+          <!-- Overlapping badge -->
+          <div class="about-overlay-badge">
+            <div class="overlay-metric-val">+85</div>
+            <div class="overlay-metric-lbl" data-i18n="heroMetric2Label">Proyectos Implementados</div>
+          </div>
+        </div>
+
+        <!-- About Text Details -->
+        <div class="about-content">
+          <p class="about-text-lead" data-i18n="aboutParagraph1">
+            MSS-DATA nació con un propósito claro: eliminar la brecha entre la estrategia de negocio y la ingeniería de software moderna. No creamos plantillas genéricas; creamos plataformas robustas, escalables y seguras que se adaptan al modelo operativo de cada cliente.
+          </p>
+
+          <p class="about-text-secondary" data-i18n="aboutParagraph2">
+            Nuestro equipo multidisciplinario combina experiencia en desarrollo full-stack, ingeniería de datos, pipelines CI/CD y diseño de interfaces con ergonomía digital, asegurando entregas a tiempo y sin sorpresas.
+          </p>
+
+          <ul class="about-features-list">
+            <li class="about-feat-item">
+              <div class="check-icon-wrap">
+                <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span data-i18n="aboutFeature1">Metodologías ágiles con sprints quincenales y entregables funcionales.</span>
+            </li>
+            <li class="about-feat-item">
+              <div class="check-icon-wrap">
+                <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span data-i18n="aboutFeature2">Garantía de rendimiento, auditorías de seguridad y documentación exhaustiva.</span>
+            </li>
+            <li class="about-feat-item">
+              <div class="check-icon-wrap">
+                <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span data-i18n="aboutFeature3">Soporte post-despliegue y transferencia de conocimiento al cliente.</span>
+            </li>
+          </ul>
+
+          <a href="#contacto" class="btn-about-action">
+            <span data-i18n="aboutBtn">Conoce Nuestra Metodología</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Features & Capabilities Section
+       (Flanked 3 Left + Center Showcase Phone + 3 Right - inspired by reference)
+       ========================================================================== -->
+  <section class="features-section" id="capacidades">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="featuresTag">Nuestras Capacidades</span>
+        <h2 class="section-title" data-i18n="featuresTitle">Soluciones de ingeniería digital de punta a punta</h2>
+        <div class="section-divider">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+        <p class="section-sub" data-i18n="featuresSub">
+          Tecnologías modernas implementadas con estándares internacionales de desarrollo.
+        </p>
+      </div>
+
+      <div class="features-flanked-layout">
+        
+        <!-- Left 3 Features (Right-aligned text on desktop) -->
+        <div class="features-col left-col">
+          
+          <!-- Item 1 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat1Title">Plataformas Web y SaaS</h4>
+              <p class="feat-desc" data-i18n="feat1Desc">
+                Sistemas web interactivos construidos con React, Next.js y APIs REST/GraphQL de baja latencia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat2Title">Aplicaciones Móviles</h4>
+              <p class="feat-desc" data-i18n="feat2Desc">
+                Desarrollo nativo e híbrido para iOS y Android con experiencias fluidas y sincronización offline.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat3Title">Ingeniería de Datos</h4>
+              <p class="feat-desc" data-i18n="feat3Desc">
+                Pipelines ETL, lagos de datos y modelado analítico para la toma de decisiones basada en métricas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Center Device Mockup (Phone Showcase) -->
+        <div class="features-center-device">
+          <div class="center-device-frame">
+            <div class="center-device-screen">
+              
+              <div class="phone-screen-card">
+                <div class="phone-screen-card-header">
+                  <span>MSS Core System</span>
+                  <span style="color: #10b981;">Online</span>
+                </div>
+                <div style="font-size: 0.95rem; font-weight: 700; color: #181c2e;">Active Sprints</div>
+                <div style="font-size: 0.75rem; color: #64748b;">4 modules in CI/CD pipeline</div>
+                <div class="phone-screen-progress">
+                  <div class="phone-screen-progress-bar"></div>
+                </div>
+              </div>
+
+              <div class="phone-screen-card">
+                <div class="phone-screen-card-header">
+                  <span>Microservices Status</span>
+                  <span>99.98%</span>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 6px;">
+                  <span style="font-size: 0.7rem; background: #ede9fe; color: #6d28d9; padding: 2px 8px; border-radius: 4px; font-weight: 600;">Auth API</span>
+                  <span style="font-size: 0.7rem; background: #ecfdf5; color: #047857; padding: 2px 8px; border-radius: 4px; font-weight: 600;">Data Lake</span>
+                </div>
+              </div>
+
+              <div class="phone-screen-card">
+                <div style="font-size: 0.75rem; font-weight: 700; color: #181c2e; margin-bottom: 4px;">Security Audit</div>
+                <div style="font-size: 0.72rem; color: #64748b;">Zero vulnerabilities detected in static code analysis.</div>
+                <div class="phone-screen-btn">System Healthy</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3 Features (Left-aligned text) -->
+        <div class="features-col right-col">
+          
+          <!-- Item 4 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat4Title">Arquitectura Cloud y DevOps</h4>
+              <p class="feat-desc" data-i18n="feat4Desc">
+                Infraestructuras en AWS, Google Cloud y Azure con despliegue automatizado y contenedores Docker.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat5Title">Diseño UI/UX de Producto</h4>
+              <p class="feat-desc" data-i18n="feat5Desc">
+                Prototipado interactivo, sistemas de diseño estandarizados e interfaces intuitivas centradas en el usuario.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="feat-item">
+            <div class="feat-icon-badge">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div class="feat-info">
+              <h4 class="feat-title" data-i18n="feat6Title">Seguridad y Auditoría</h4>
+              <p class="feat-desc" data-i18n="feat6Desc">
+                Cumplimiento normativo, pruebas de penetración, cifrado integral y prevención activa de vulnerabilidades.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Tech Stack Bar
+       ========================================================================== -->
+  <section class="tech-section">
+    <div class="container">
+      <h3 class="tech-title" data-i18n="techTitle">Ecosistema Tecnológico Moderno</h3>
+      <div class="tech-badges-grid">
+        <div class="tech-badge">
+          <svg class="icon" style="color: #61dafb;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><ellipse cx="12" cy="12" rx="10" ry="4"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"></ellipse></svg>
+          <span>React & Next.js</span>
+        </div>
+        <div class="tech-badge">
+          <svg class="icon" style="color: #3178c6;" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span>TypeScript</span>
+        </div>
+        <div class="tech-badge">
+          <svg class="icon" style="color: #22c55e;" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <span>Node.js & Python</span>
+        </div>
+        <div class="tech-badge">
+          <svg class="icon" style="color: #336791;" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          <span>PostgreSQL & Redis</span>
+        </div>
+        <div class="tech-badge">
+          <svg class="icon" style="color: #0284c7;" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <span>Docker & Kubernetes</span>
+        </div>
+        <div class="tech-badge">
+          <svg class="icon" style="color: #f59e0b;" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+          <span>AWS & Cloudflare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Showcase Section
+       ========================================================================== -->
+  <section class="projects-section" id="proyectos">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag" data-i18n="projectsTag">Casos de Éxito</span>
+        <h2 class="section-title" data-i18n="projectsTitle">Proyectos construidos con precisión técnica</h2>
+        <div class="section-divider">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </div>
+        <p class="section-sub" data-i18n="projectsSub">
+          Una muestra representativa de los productos que hemos llevado a producción.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-banner-visual">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: #a5b4fc;">FINTECH-ENGINE-01</span>
+                <span style="background: rgba(99, 102, 241, 0.3); color: #c7d2fe; font-size: 0.65rem; padding: 2px 8px; border-radius: 4px;">Live API</span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 1.1rem; color: #fff; font-weight: 700;">
+                $1.2M+ / mes
+              </div>
+              <div style="font-size: 0.7rem; color: #94a3b8;">99.99% Transacciones Conciliadas</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="project1Category">Fintech & Facturación</span>
+            <h3 class="project-title" data-i18n="project1Title">Plataforma de Facturación y Conciliación Automatizada</h3>
+            <p class="project-desc" data-i18n="project1Desc">
+              Sistema en tiempo real para procesamiento masivo de transacciones bancarias, generación de facturas electrónicas y auditoría fiscal.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">Next.js</span>
+              <span class="project-tag-pill">PostgreSQL</span>
+              <span class="project-tag-pill">Redis</span>
+              <span class="project-tag-pill">Stripe API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-banner-visual">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: #6ee7b7;">TELEMETRY-HUB-02</span>
+                <span style="background: rgba(16, 185, 129, 0.3); color: #a7f3d0; font-size: 0.65rem; padding: 2px 8px; border-radius: 4px;">IoT Active</span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 1.1rem; color: #fff; font-weight: 700;">
+                +450 Unidades
+              </div>
+              <div style="font-size: 0.7rem; color: #94a3b8;">Monitoreo GPS en tiempo real</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="project2Category">Logística & Supply Chain</span>
+            <h3 class="project-title" data-i18n="project2Title">Suite de Seguimiento y Gestión de Flotas</h3>
+            <p class="project-desc" data-i18n="project2Desc">
+              Panel de control georreferenciado con telemetría en vivo, optimización de rutas y algoritmos predictivos de entrega.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">React Native</span>
+              <span class="project-tag-pill">Node.js</span>
+              <span class="project-tag-pill">WebSockets</span>
+              <span class="project-tag-pill">Mapbox</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-banner-visual">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: #cbd5e1;">HEALTH-CORE-03</span>
+                <span style="background: rgba(148, 163, 184, 0.3); color: #f1f5f9; font-size: 0.65rem; padding: 2px 8px; border-radius: 4px;">HIPAA Ready</span>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 1.1rem; color: #fff; font-weight: 700;">
+                +120K Registros
+              </div>
+              <div style="font-size: 0.7rem; color: #94a3b8;">Cifrado AES-256 de punta a punta</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="project3Category">Salud & Analítica</span>
+            <h3 class="project-title" data-i18n="project3Title">Portal Clínico de Historiales y Métricas Médicas</h3>
+            <p class="project-desc" data-i18n="project3Desc">
+              Infraestructura protegida con encriptación de grado hospitalario para intercambio de datos clínicos y teleconsultas.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag-pill">Vue 3</span>
+              <span class="project-tag-pill">FastAPI</span>
+              <span class="project-tag-pill">Docker</span>
+              <span class="project-tag-pill">AWS KMS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Estimator & Contact Section
+       ========================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      
+      <div class="contact-card-box">
+        
+        <!-- Contact Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-sidebar-top">
+            <span class="section-tag" style="background: rgba(255, 255, 255, 0.15); color: #fff;" data-i18n="contactTag">Inicia Tu Proyecto</span>
+            <h3 data-i18n="contactTitle">Hablemos de tus requerimientos técnicos</h3>
+            <p data-i18n="contactSub">
+              Completa el formulario y recibe una propuesta de arquitectura y cronograma estimado en menos de 24 horas.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <span>contacto@mssdata.tech</span>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <span>Atención Global Remota</span>
+              </div>
+
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <span>Tiempo de respuesta: &lt; 24h</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7); margin-top: 30px;">
+            MSS-DATA Engineering Systems
+          </div>
+        </div>
+
+        <!-- Contact Form Pane -->
+        <div class="contact-form-pane">
+          <form class="contact-form" id="contactForm">
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" data-i18n="formNameLabel">Nombre Completo</label>
+                <input type="text" class="form-input" required placeholder="Ej. Carlos Mendoza" data-i18n-placeholder="formNamePlaceholder">
+              </div>
+              <div class="form-group">
+                <label class="form-label" data-i18n="formEmailLabel">Correo Corporativo</label>
+                <input type="email" class="form-input" required placeholder="carlos@empresa.com" data-i18n-placeholder="formEmailPlaceholder">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" data-i18n="formServiceLabel">Tipo de Proyecto</label>
+                <select class="form-select">
+                  <option data-i18n="formServiceOpt1">Desarrollo Web / Plataforma SaaS</option>
+                  <option data-i18n="formServiceOpt2">Aplicación Móvil iOS / Android</option>
+                  <option data-i18n="formServiceOpt3">Ingeniería de Datos y Analítica</option>
+                  <option data-i18n="formServiceOpt4">Auditoría, Cloud o DevOps</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" data-i18n="formBudgetLabel">Presupuesto Estimado</label>
+                <select class="form-select">
+                  <option data-i18n="formBudgetOpt1">Menos de $5,000 USD</option>
+                  <option data-i18n="formBudgetOpt2">$5,000 - $15,000 USD</option>
+                  <option data-i18n="formBudgetOpt3">$15,000 - $30,000 USD</option>
+                  <option data-i18n="formBudgetOpt4">Más de $30,000 USD</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" data-i18n="formMessageLabel">Detalles del Proyecto</label>
+              <textarea class="form-textarea" required placeholder="Describe los objetivos principales, requerimientos clave y tiempos estimados..." data-i18n-placeholder="formMessagePlaceholder"></textarea>
+            </div>
+
+            <button type="submit" class="btn-form-submit">
+              <span data-i18n="formSubmit">Solicitar Cotización Técnica</span>
+              <svg class="icon" viewBox="0 0 24 24">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <!-- Success Alert Notification -->
+            <div class="form-alert-msg" id="formAlert">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span data-i18n="formSuccess">Mensaje recibido exitosamente. Un ingeniero de MSS-DATA se comunicará contigo a la brevedad.</span>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-pane">
+          <div class="footer-brand">
+            <div class="brand-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M16 18l6-6-6-6"></path>
+                <path d="M8 6l-6 6 6 6"></path>
+                <line x1="12" y1="4" x2="12" y2="20"></line>
+              </svg>
+            </div>
+            <span>MSS-DATA</span>
+          </div>
+          <p class="footer-desc" data-i18n="footerDesc">
+            MSS-DATA es una empresa de desarrollo de software e ingeniería de datos dedicada a crear productos tecnológicos de alta demanda y escalabilidad.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerNavTitle">Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link" data-i18n="navHome">Inicio</a></li>
+            <li><a href="#servicios" class="footer-link" data-i18n="navServices">Servicios</a></li>
+            <li><a href="#nosotros" class="footer-link" data-i18n="navAbout">Nosotros</a></li>
+            <li><a href="#capacidades" class="footer-link" data-i18n="navFeatures">Capacidades</a></li>
+            <li><a href="#proyectos" class="footer-link" data-i18n="navProjects">Proyectos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerServicesTitle">Especialidades</h4>
+          <ul class="footer-links-list">
+            <li><a href="#capacidades" class="footer-link">SaaS & Cloud Native</a></li>
+            <li><a href="#capacidades" class="footer-link">Mobile Apps iOS/Android</a></li>
+            <li><a href="#capacidades" class="footer-link">Data Pipelines ETL</a></li>
+            <li><a href="#capacidades" class="footer-link">DevOps & CI/CD</a></li>
+            <li><a href="#capacidades" class="footer-link">Auditoría de Código</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerLegalTitle">Legal & Seguridad</h4>
+          <ul class="footer-links-list">
+            <li><a href="#contacto" class="footer-link" data-i18n="footerPrivacy">Política de Privacidad</a></li>
+            <li><a href="#contacto" class="footer-link" data-i18n="footerTerms">Términos del Servicio</a></li>
+            <li><a href="#contacto" class="footer-link" data-i18n="footerSecurity">Seguridad de Datos</a></li>
+            <li><a href="#contacto" class="footer-link">SLA & Garantía</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> <span data-i18n="footerCopyright">MSS-DATA. Todos los derechos reservados. Desarrollado con excelencia técnica.</span>
+        </div>
+        <div>
+          <button class="btn-lang-trigger" style="color: #cbd5e1; border-color: #334155; background: #1e293b;">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span data-i18n="langSelectorTitle">Seleccionar Idioma</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Language Switcher Modal / Panel
+       ========================================================================== -->
+  <div class="lang-modal-backdrop" id="langModal">
+    <div class="lang-panel">
+      <div class="lang-panel-header">
+        <h3 class="lang-panel-title" data-i18n="langSelectorTitle">Seleccionar Idioma</h3>
+        <button class="btn-close-lang" id="closeLangModal" aria-label="Cerrar">
+          <svg class="icon" viewBox="0 0 24 24">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="lang-panel-desc" data-i18n="langSelectorDesc">
+        Elige tu idioma de preferencia para explorar la plataforma.
+      </p>
+
+      <div class="lang-options-grid">
+        <!-- Spanish -->
+        <div class="lang-option-card active" data-lang="es">
+          <div class="lang-option-left">
+            <span class="lang-code-pill">ES</span>
+            <span class="lang-option-name" data-i18n="langEs">Español (ES)</span>
+          </div>
+          <div class="lang-check-radio"></div>
+        </div>
+
+        <!-- English -->
+        <div class="lang-option-card" data-lang="en">
+          <div class="lang-option-left">
+            <span class="lang-code-pill">EN</span>
+            <span class="lang-option-name" data-i18n="langEn">English (US)</span>
+          </div>
+          <div class="lang-check-radio"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "mss-data-landing",
+  "version": "1.0.0",
+  "description": "Landing page corporativa para MSS-DATA — Ingeniería de software, datos y soluciones digitales. Bilingüe (ES/EN), sin frameworks, vanilla HTML/CSS/JS.",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "landing-page",
+    "software-company",
+    "data-engineering",
+    "vanilla-js",
+    "bilingual",
+    "static-site"
+  ],
+  "author": "MSS-DATA <contacto@mssdata.tech>",
+  "license": "MIT",
+  "homepage": "https://github.com/mss-data/frontend-mssdata#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mss-data/frontend-mssdata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mss-data/frontend-mssdata/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

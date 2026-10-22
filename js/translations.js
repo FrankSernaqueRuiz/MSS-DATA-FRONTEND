@@ -1,0 +1,263 @@
+export const translations = {
+  es: {
+    metaTitle: "MSS-DATA | Ingeniería de Software, Datos y Soluciones Digitales",
+    metaDescription: "Desarrollo de software a medida, arquitectura de datos y soluciones cloud de alto impacto para potenciar empresas innovadoras.",
+    
+    // Navbar
+    navHome: "Inicio",
+    navServices: "Servicios",
+    navAbout: "Nosotros",
+    navFeatures: "Capacidades",
+    navProjects: "Proyectos",
+    navContact: "Contacto",
+    navCta: "Cotizar Proyecto",
+    
+    // Language Switcher
+    langSelectorTitle: "Seleccionar Idioma",
+    langSelectorDesc: "Elige tu idioma de preferencia para explorar la plataforma.",
+    langCurrent: "Español",
+    langEs: "Español (ES)",
+    langEn: "English (US)",
+    
+    // Hero
+    heroBadge: "Ingeniería de Software & Proyectos Digitales",
+    heroTitlePart1: "Construimos software sólido que impulsa el",
+    heroTitleHighlight: "crecimiento empresarial",
+    heroDesc: "En MSS-DATA transformamos requerimientos técnicos complejos en productos digitales escalables, arquitecturas de datos seguras y aplicaciones web y móviles de alto rendimiento.",
+    heroCtaPrimary: "Iniciar Proyecto",
+    heroCtaSecondary: "Ver Capacidades",
+    heroMetric1Value: "99.8%",
+    heroMetric1Label: "Disponibilidad en Producción",
+    heroMetric2Value: "+85",
+    heroMetric2Label: "Proyectos Implementados",
+    heroMetric3Value: "100%",
+    heroMetric3Label: "Código Limpio & Documentado",
+    
+    // Hero Preview Card
+    heroPreviewTitle: "MSS Data Core Engine",
+    heroPreviewStatus: "Sistemas Operativos",
+    heroPreviewDeploy: "Despliegue Continuo Activo",
+    heroPreviewMetricUptime: "Tiempo de Actividad",
+    heroPreviewMetricLatency: "Latencia Promedio",
+    heroPreviewMetricSec: "Protección perimetral y cifrado TLS 1.3",
+    
+    // Quick Highlight Cards (Similar to reference image top 3 cards)
+    card1Title: "Desarrollo a Medida",
+    card1Desc: "Aplicaciones web y móviles concebidas con arquitecturas modulares, escalables y código de alta calidad.",
+    card2Title: "Monitoreo y Métricas",
+    card2Desc: "Control en tiempo real, observabilidad activa y detección temprana de fallos para máxima disponibilidad.",
+    card3Title: "Arquitectura Cloud",
+    card3Desc: "Infraestructura serverless y contenedores optimizados para costos, seguridad y rendimiento continuo.",
+    
+    // About Section
+    aboutTag: "Acerca de MSS-DATA",
+    aboutTitle: "Ingeniería aplicada con enfoque en resultados medibles",
+    aboutSub: "Diseñamos ecosistemas tecnológicos que soportan las operaciones críticas de tu organización.",
+    aboutParagraph1: "MSS-DATA nació con un propósito claro: eliminar la brecha entre la estrategia de negocio y la ingeniería de software moderna. No creamos plantillas genéricas; creamos plataformas robustas, escalables y seguras que se adaptan al modelo operativo de cada cliente.",
+    aboutParagraph2: "Nuestro equipo multidisciplinario combina experiencia en desarrollo full-stack, ingeniería de datos, pipelines CI/CD y diseño de interfaces con ergonomía digital, asegurando entregas a tiempo y sin sorpresas.",
+    aboutFeature1: "Metodologías ágiles con sprints quincenales y entregables funcionales.",
+    aboutFeature2: "Garantía de rendimiento, auditorías de seguridad y documentación exhaustiva.",
+    aboutFeature3: "Soporte post-despliegue y transferencia de conocimiento al cliente.",
+    aboutBtn: "Conoce Nuestra Metodología",
+    
+    // Features / Capabilities (Layout with center phone / dashboard mockup flanked by 6 points)
+    featuresTag: "Nuestras Capacidades",
+    featuresTitle: "Soluciones de ingeniería digital de punta a punta",
+    featuresSub: "Tecnologías modernas implementadas con estándares internacionales de desarrollo.",
+    
+    feat1Title: "Plataformas Web y SaaS",
+    feat1Desc: "Sistemas web interactivos construidos con React, Next.js y APIs REST/GraphQL de baja latencia.",
+    feat2Title: "Aplicaciones Móviles",
+    feat2Desc: "Desarrollo nativo e híbrido para iOS y Android con experiencias fluidas y sincronización offline.",
+    feat3Title: "Ingeniería de Datos",
+    feat3Desc: "Pipelines ETL, lagos de datos y modelado analítico para la toma de decisiones basada en métricas.",
+    feat4Title: "Arquitectura Cloud y DevOps",
+    feat4Desc: "Infraestructuras en AWS, Google Cloud y Azure con despliegue automatizado y contenedores Docker.",
+    feat5Title: "Diseño UI/UX de Producto",
+    feat5Desc: "Prototipado interactivo, sistemas de diseño estandarizados e interfaces intuitivas centradas en el usuario.",
+    feat6Title: "Seguridad y Auditoría",
+    feat6Desc: "Cumplimiento normativo, pruebas de penetración, cifrado integral y prevención activa de vulnerabilidades.",
+    
+    // Projects Showcase
+    projectsTag: "Casos de Éxito",
+    projectsTitle: "Proyectos construidos con precisión técnica",
+    projectsSub: "Una muestra representativa de los productos que hemos llevado a producción.",
+    project1Category: "Fintech & Facturación",
+    project1Title: "Plataforma de Facturación y Conciliación Automatizada",
+    project1Desc: "Sistema en tiempo real para procesamiento masivo de transacciones bancarias, generación de facturas electrónicas y auditoría fiscal.",
+    project2Category: "Logística & Supply Chain",
+    project2Title: "Suite de Seguimiento y Gestión de Flotas",
+    project2Desc: "Panel de control georreferenciado con telemetría en vivo, optimización de rutas y algoritmos predictivos de entrega.",
+    project3Category: "Salud & Analítica",
+    project3Title: "Portal Clínico de Historiales y Métricas Médicas",
+    project3Desc: "Infraestructura protegida con encriptación de grado hospitalario para intercambio de datos clínicos y teleconsultas.",
+    
+    // Tech Stack Section
+    techTitle: "Ecosistema Tecnológico Moderno",
+    techSub: "Utilizamos las herramientas líderes del mercado para garantizar solidez y longevidad.",
+    
+    // Estimator / Contact
+    contactTag: "Inicia Tu Proyecto",
+    contactTitle: "Hablemos de tus requerimientos técnicos",
+    contactSub: "Completa el formulario y recibe una propuesta de arquitectura y cronograma estimado en menos de 24 horas.",
+    formNameLabel: "Nombre Completo",
+    formNamePlaceholder: "Ej. Carlos Mendoza",
+    formEmailLabel: "Correo Corporativo",
+    formEmailPlaceholder: "carlos@empresa.com",
+    formServiceLabel: "Tipo de Proyecto",
+    formServiceOpt1: "Desarrollo Web / Plataforma SaaS",
+    formServiceOpt2: "Aplicación Móvil iOS / Android",
+    formServiceOpt3: "Ingeniería de Datos y Analítica",
+    formServiceOpt4: "Auditoría, Cloud o DevOps",
+    formBudgetLabel: "Presupuesto Estimado",
+    formBudgetOpt1: "Menos de $5,000 USD",
+    formBudgetOpt2: "$5,000 - $15,000 USD",
+    formBudgetOpt3: "$15,000 - $30,000 USD",
+    formBudgetOpt4: "Más de $30,000 USD",
+    formMessageLabel: "Detalles del Proyecto",
+    formMessagePlaceholder: "Describe los objetivos principales, requerimientos clave y tiempos estimados...",
+    formSubmit: "Solicitar Cotización Técnica",
+    formSuccess: "Mensaje recibido exitosamente. Un ingeniero de MSS-DATA se comunicará contigo a la brevedad.",
+    
+    // Footer
+    footerDesc: "MSS-DATA es una empresa de desarrollo de software e ingeniería de datos dedicada a crear productos tecnológicos de alta demanda y escalabilidad.",
+    footerNavTitle: "Navegación",
+    footerServicesTitle: "Especialidades",
+    footerLegalTitle: "Legal & Seguridad",
+    footerPrivacy: "Política de Privacidad",
+    footerTerms: "Términos del Servicio",
+    footerSecurity: "Seguridad de Datos",
+    footerCopyright: "MSS-DATA. Todos los derechos reservados. Desarrollado con excelencia técnica."
+  },
+  
+  en: {
+    metaTitle: "MSS-DATA | Software Engineering, Data & Digital Solutions",
+    metaDescription: "Custom software development, data architecture, and high-impact cloud solutions to empower innovative organizations.",
+    
+    // Navbar
+    navHome: "Home",
+    navServices: "Services",
+    navAbout: "About Us",
+    navFeatures: "Capabilities",
+    navProjects: "Projects",
+    navContact: "Contact",
+    navCta: "Request a Quote",
+    
+    // Language Switcher
+    langSelectorTitle: "Select Language",
+    langSelectorDesc: "Choose your preferred language to explore our platform.",
+    langCurrent: "English",
+    langEs: "Spanish (ES)",
+    langEn: "English (US)",
+    
+    // Hero
+    heroBadge: "Software Engineering & Digital Projects",
+    heroTitlePart1: "We build resilient software that fuels enterprise",
+    heroTitleHighlight: "business growth",
+    heroDesc: "At MSS-DATA, we turn complex technical specifications into scalable digital platforms, secure data infrastructures, and high-performance web and mobile applications.",
+    heroCtaPrimary: "Start Project",
+    heroCtaSecondary: "Explore Capabilities",
+    heroMetric1Value: "99.8%",
+    heroMetric1Label: "Production Uptime",
+    heroMetric2Value: "+85",
+    heroMetric2Label: "Deployed Systems",
+    heroMetric3Value: "100%",
+    heroMetric3Label: "Clean & Documented Code",
+    
+    // Hero Preview Card
+    heroPreviewTitle: "MSS Data Core Engine",
+    heroPreviewStatus: "Systems Operational",
+    heroPreviewDeploy: "Continuous Deployment Active",
+    heroPreviewMetricUptime: "System Uptime",
+    heroPreviewMetricLatency: "Average Latency",
+    heroPreviewMetricSec: "Perimeter protection & TLS 1.3 encryption",
+    
+    // Quick Highlight Cards
+    card1Title: "Custom Engineering",
+    card1Desc: "Web and mobile systems crafted with modular architectures, high scalability, and clean code standards.",
+    card2Title: "Monitoring & Observability",
+    card2Desc: "Real-time telemetry, active observability, and early anomaly detection for uninterrupted uptime.",
+    card3Title: "Cloud Architecture",
+    card3Desc: "Serverless infrastructures and containerized workloads optimized for cost, security, and sustained speed.",
+    
+    // About Section
+    aboutTag: "About MSS-DATA",
+    aboutTitle: "Applied engineering focused on measurable business outcomes",
+    aboutSub: "We architect technological ecosystems engineered to handle your organization's mission-critical workflows.",
+    aboutParagraph1: "MSS-DATA was founded with a clear directive: eliminate the divide between business ambition and modern software engineering. We do not build generic templates; we engineer robust, scalable, and secure platforms tailored to your operational model.",
+    aboutParagraph2: "Our cross-functional teams bring deep expertise across full-stack development, data pipelining, CI/CD automation, and ergonomic interface design, guaranteeing on-time milestones without technical surprises.",
+    aboutFeature1: "Agile sprints with bi-weekly cycles and functional deliverables.",
+    aboutFeature2: "Performance benchmarks, comprehensive code reviews, and structured documentation.",
+    aboutFeature3: "Post-deployment maintenance and systematic team knowledge transfer.",
+    aboutBtn: "Explore Our Methodology",
+    
+    // Features / Capabilities
+    featuresTag: "Our Capabilities",
+    featuresTitle: "End-to-end digital engineering solutions",
+    featuresSub: "Modern frameworks implemented in alignment with world-class engineering standards.",
+    
+    feat1Title: "Web Platforms & SaaS",
+    feat1Desc: "Interactive cloud-native web applications engineered with React, Next.js, and ultra-low latency APIs.",
+    feat2Title: "Mobile Applications",
+    feat2Desc: "Native and hybrid apps for iOS and Android delivering fluid 60fps experiences and offline resilience.",
+    feat3Title: "Data Engineering",
+    feat3Desc: "Automated ETL pipelines, data lakes, and dimensional modeling for actionable, data-driven intelligence.",
+    feat4Title: "Cloud Infrastructure & DevOps",
+    feat4Desc: "Cloud environments on AWS, Google Cloud, and Azure with automated CI/CD and Docker container clusters.",
+    feat5Title: "Product UI/UX Engineering",
+    feat5Desc: "Interactive prototyping, design systems, and ergonomic user journeys built for high adoption.",
+    feat6Title: "Security & Auditing",
+    feat6Desc: "Compliance verification, vulnerability scanning, end-to-end data encryption, and defensive architecture.",
+    
+    // Projects Showcase
+    projectsTag: "Case Studies",
+    projectsTitle: "Projects delivered with technical precision",
+    projectsSub: "A curated selection of software products successfully deployed to production.",
+    project1Category: "Fintech & Invoicing",
+    project1Title: "Automated Reconciliation & Invoicing Engine",
+    project1Desc: "Real-time transactional processing platform handling high volume ledger reconciliation and automated fiscal compliance.",
+    project2Category: "Logistics & Fleet Ops",
+    project2Title: "Fleet Telemetry & Dispatch Command Center",
+    project2Desc: "Geospatial monitoring dashboard with live sensor tracking, route optimization, and delivery ETA predictive algorithms.",
+    project3Category: "Healthcare Analytics",
+    project3Title: "Clinical Data Registry & Telehealth Portal",
+    project3Desc: "HIPAA-grade encrypted infrastructure for secure clinical records exchange, doctor scheduling, and diagnostics.",
+    
+    // Tech Stack Section
+    techTitle: "Modern Technology Ecosystem",
+    techSub: "We build on battle-tested frameworks to guarantee long-term stability and performance.",
+    
+    // Estimator / Contact
+    contactTag: "Start Your Project",
+    contactTitle: "Discuss your technical requirements with us",
+    contactSub: "Fill out the form below to receive a preliminary architecture outline and budget estimate within 24 hours.",
+    formNameLabel: "Full Name",
+    formNamePlaceholder: "e.g. Alex Morgan",
+    formEmailLabel: "Work Email",
+    formEmailPlaceholder: "alex@company.com",
+    formServiceLabel: "Project Scope",
+    formServiceOpt1: "Web Platform / SaaS Development",
+    formServiceOpt2: "Mobile Application (iOS / Android)",
+    formServiceOpt3: "Data Engineering & Analytics",
+    formServiceOpt4: "Cloud Architecture & DevOps",
+    formBudgetLabel: "Estimated Budget",
+    formBudgetOpt1: "Under $5,000 USD",
+    formBudgetOpt2: "$5,000 - $15,000 USD",
+    formBudgetOpt3: "$15,000 - $30,000 USD",
+    formBudgetOpt4: "$30,000+ USD",
+    formMessageLabel: "Project Scope & Details",
+    formMessagePlaceholder: "Provide a high-level summary of your core objectives, key integrations, and target timeline...",
+    formSubmit: "Request Technical Proposal",
+    formSuccess: "Inquiry successfully submitted. An MSS-DATA solutions architect will contact you shortly.",
+    
+    // Footer
+    footerDesc: "MSS-DATA is a software engineering and data solutions firm dedicated to creating resilient, high-capacity digital products.",
+    footerNavTitle: "Navigation",
+    footerServicesTitle: "Core Services",
+    footerLegalTitle: "Legal & Trust",
+    footerPrivacy: "Privacy Policy",
+    footerTerms: "Terms of Service",
+    footerSecurity: "Data Security Standards",
+    footerCopyright: "MSS-DATA. All rights reserved. Engineered for technical excellence."
+  }
+};
