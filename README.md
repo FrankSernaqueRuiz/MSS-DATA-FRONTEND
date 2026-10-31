@@ -1,152 +1,141 @@
-# MSS-DATA — Landing Page Corporativa
+# MSS-DATA — Landing Page Corporativa (Astro)
 
-Landing page institucional para **MSS-DATA**, empresa dedicada a la ingeniería de software, arquitectura de datos y soluciones digitales de alto impacto. Construida en **Vanilla HTML/CSS/JS** sin dependencias de frameworks, con cambio dinámico de idioma (ES/EN) y diseño premium.
-
----
-
-## Vista Previa
-
-> Despliega localmente con `npm run dev` y abre `http://localhost:3000`.
+Landing page institucional para **MSS-DATA**, empresa especializada en desarrollo de software a medida, arquitectura de datos y soluciones cloud de alto impacto. Desarrollada con **[Astro](https://astro.build/)**, estructura modular por componentes, panel bilingüe instantáneo (ES/EN) y diseño moderno y responsivo sin emojis.
 
 ---
 
-## Tecnologías
+## Vista Previa y Desarrollo Local
+
+> Inicia el entorno local con `npm run dev` y accede a `http://localhost:4321`.
+
+---
+
+## Tecnologías Utilizadas
 
 | Capa | Tecnología |
 |---|---|
-| Estructura | HTML5 semántico |
-| Estilos | Vanilla CSS (variables, grid, flexbox, animaciones) |
-| Lógica | JavaScript ES Modules (sin frameworks ni build tools) |
-| Tipografía | [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts |
-| Servidor local | [serve](https://www.npmjs.com/package/serve) (via `npx`) |
+| **Framework** | [Astro](https://astro.build/) (v5.x) |
+| **Componentes** | Componentes `.astro` modulares y reactividad pura |
+| **Estilos** | CSS moderno con variables, flexbox, CSS grid y animaciones fluidas |
+| **Lógica e i18n** | JavaScript modular con diccionario de traducción en `src/data/` |
+| **Tipografía** | [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) |
+| **Assets** | SVG vectoriales optimizados en `public/` |
 
 ---
 
 ## Estructura del Proyecto
 
-```
+El repositorio sigue la arquitectura oficial recomendada para proyectos Astro:
+
+```text
 frontend-mssdata/
-├── index.html              # Punto de entrada principal
-├── package.json            # Scripts y metadatos del proyecto
-├── .gitignore
-├── .editorconfig
-├── LICENSE
-├── README.md
-├── styles/
-│   ├── main.css            # Sistema de diseño, componentes, animaciones
-│   └── responsive.css      # Reglas adaptativas para tablet y móvil
-└── js/
-    ├── main.js             # Lógica: i18n, navbar scroll, formulario, scrollspy
-    └── translations.js     # Diccionario de textos ES / EN
+├── .astro/                     # Tipos y cache autogenerados por Astro
+├── node_modules/               # Dependencias instaladas
+├── public/                     # Archivos estáticos servidos directamente
+│   └── favicon.svg             # Favicon SVG corporativo
+├── src/
+│   ├── components/             # Componentes de la interfaz
+│   │   ├── About.astro         # Sección Sobre Nosotros y métricas
+│   │   ├── Contact.astro       # Formulario y canales de contacto
+│   │   ├── Features.astro      # Capacidades y servicios detallados
+│   │   ├── Footer.astro        # Pie de página y enlaces
+│   │   ├── Hero.astro          # Hero con console mockup y métricas flotantes
+│   │   ├── Highlights.astro    # Tarjetas de servicio destacadas
+│   │   ├── LangModal.astro     # Modal para el cambio de idioma
+│   │   ├── Navbar.astro        # Barra de navegación con glassmorphism
+│   │   ├── Projects.astro      # Casos de éxito y proyectos implementados
+│   │   └── TechStack.astro     # Ecosistema tecnológico y herramientas
+│   ├── data/
+│   │   └── translations.js     # Diccionario bilingüe (ES / EN)
+│   ├── layouts/
+│   │   └── BaseLayout.astro    # Plantilla HTML base, SEO e importación de assets
+│   ├── pages/
+│   │   └── index.astro         # Página principal (Single Page Application)
+│   ├── scripts/
+│   │   └── main.js             # Lógica cliente: i18n, modal, navbar y formularios
+│   └── styles/
+│       ├── main.css            # Variables globales, tipografía y estilos base
+│       └── responsive.css      # Reglas adaptativas para tablet y móviles
+├── astro.config.mjs            # Configuración de Astro
+├── package.json                # Scripts npm y dependencias del proyecto
+├── tsconfig.json               # Configuración TypeScript y alias de rutas
+├── .gitignore                  # Reglas de exclusión para Git (.astro, node_modules, dist)
+├── .editorconfig               # Configuración de indentación y formato de código
+├── LICENSE                     # Licencia MIT
+└── README.md                   # Documentación del proyecto
 ```
 
 ---
 
-## Instalación y Uso Local
+## Scripts Disponibles
 
-Requiere **Node.js >= 18** y **npm**.
+En la raíz del proyecto puedes ejecutar:
 
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/mss-data/frontend-mssdata.git
+# Instalar dependencias
+npm install
 
-# 2. Acceder al directorio
-cd frontend-mssdata
-
-# 3. Iniciar el servidor de desarrollo
+# Iniciar servidor de desarrollo en http://localhost:4321
 npm run dev
+
+# Compilar para producción (genera la carpeta dist/)
+npm run build
+
+# Previsualizar la versión de producción localmente
+npm run preview
 ```
 
-El sitio estará disponible en `http://localhost:3000`.
+---
+
+## Funcionalidades Destacadas
+
+### 1. Panel de Cambio de Idioma (i18n)
+- Soporte nativo para **Español (ES)** e **Inglés (EN)**.
+- Modal accesible desde la barra de navegación y el pie de página.
+- Persistencia automática de la preferencia del usuario en `localStorage`.
+- Cambio de textos dinámico e instantáneo en tiempo real.
+
+### 2. Secciones Modulares
+- **Hero:** Propuesta de valor, métricas operativas y mockup 3D de dashboard con badges flotantes.
+- **Highlights:** 3 pilares clave superpuestos con elevación y sombras suaves.
+- **Nosotros:** Filosofía técnica, arquitectura de código y trayectoria.
+- **Capacidades:** Distribución flanqueada de servicios de ingeniería de datos y software.
+- **Tech Stack:** Ecosistema tecnológico moderno clasificado.
+- **Proyectos:** Casos de estudio en sectores críticos (Fintech, Logística y Salud).
+- **Contacto:** Formulario estructurado para cotizaciones con feedback visual integrado.
+
+### 3. Principios de Diseño
+- Estética cuidada con paleta en tonos oscuros y púrpuras de contraste.
+- Cero emojis para mantener un perfil 100% corporativo e ingenieril.
+- Efectos de blur / frosted glass al hacer scroll en la barra de navegación.
+- Totalmente responsivo para pantallas ultra-wide, laptops, tablets y móviles.
 
 ---
 
-## Funcionalidades
+## Despliegue en Producción
 
-### Secciones de la Landing
+Al ejecutar:
 
-- **Hero** — Titular de impacto, métricas clave y mockup interactivo de consola de datos con badges flotantes animados.
-- **Servicios** — 3 tarjetas de destaque (*Desarrollo a Medida*, *Monitoreo y Métricas*, *Arquitectura Cloud*) superpuestas al Hero.
-- **Nosotros** — Visualización de código TypeScript, métricas de proyectos entregados y diferenciadores clave.
-- **Capacidades** — Layout flanqueado (3 izq. + consola central + 3 der.) con iconos de servicios.
-- **Stack Tecnológico** — Franja de tecnologías utilizadas (React, TypeScript, Node.js, PostgreSQL, Docker, AWS, etc.).
-- **Proyectos** — Tarjetas de casos de éxito (Fintech, Logística, Healthcare) con métricas técnicas reales.
-- **Contacto** — Formulario de cotización con selección de alcance, presupuesto y mensaje. Feedback de éxito integrado.
-- **Footer** — Navegación, especialidades, legal y selector de idioma.
-
-### Selector de Idioma (i18n)
-
-- Soporte completo en **Español (ES)** e **Inglés (EN)**.
-- Panel modal accesible desde la barra de navegación y el footer.
-- Persistencia automática de la preferencia en `localStorage`.
-- Sin recarga de página: la traducción es instantánea.
-- Sin dependencias externas de internacionalización.
-
-### Diseño
-
-- Paleta cromática violeta/púrpura eléctrico sobre fondos oscuros y claros.
-- Navbar transparente que transiciona a frosted glass al hacer scroll.
-- Hover effects, micro-animaciones y float bouncing en los badges del Hero.
-- Responsive: escritorio, tablet (1024px) y móvil (768px).
-- Sin emojis en ningún elemento de la interfaz.
-
----
-
-## Despliegue
-
-El proyecto es un sitio estático puro, compatible con cualquier CDN o plataforma:
-
-**Netlify / Vercel:**
-- Apunta la raíz del repositorio al directorio `/` (publish directory: `.`).
-- Sin comando de build requerido.
-
-**GitHub Pages:**
 ```bash
-# Desde la raíz del repositorio
-git checkout -b gh-pages
-git push origin gh-pages
-```
-Activa GitHub Pages desde `Settings > Pages > Branch: gh-pages / root`.
-
----
-
-## Personalización
-
-### Cambiar textos o agregar un idioma
-
-Edita el archivo [`js/translations.js`](js/translations.js). El objeto sigue la estructura:
-
-```js
-export const translations = {
-  es: { /* clave: "texto en español" */ },
-  en: { /* clave: "text in English"  */ }
-};
+npm run build
 ```
 
-Para agregar un idioma nuevo (ej. Portugués), agrega una clave `pt` al objeto, crea su opción en el modal dentro de `index.html` y agrega `data-lang="pt"` al elemento.
-
-### Cambiar paleta de colores
-
-Todas las variables de color están centralizadas en el bloque `:root` de [`styles/main.css`](styles/main.css):
-
-```css
-:root {
-  --color-primary: #5c1fe6;
-  --color-hero-bg: linear-gradient(...);
-  ...
-}
-```
+Astro compila el proyecto en el directorio `dist/`. Este directorio puede desplegarse en cualquier servicio de hosting moderno:
+- **Vercel** (`npx vercel`)
+- **Netlify** (`npx netlify deploy --prod --dir=dist`)
+- **Cloudflare Pages**
+- **GitHub Pages** (usando GitHub Actions o publicando la carpeta `dist`)
 
 ---
 
 ## Licencia
 
-Distribuido bajo la licencia [MIT](LICENSE).
+Distribuido bajo la Licencia [MIT](LICENSE).
 
 ---
 
 ## Contacto
 
-**MSS-DATA Engineering**
-- Correo: contacto@mssdata.tech
-- Web: [mssdata.tech](https://mssdata.tech)
+**MSS-DATA**  
+Sitio Web: [https://github.com/mss-data](https://github.com/mss-data)  
+Email: `contacto@mssdata.tech`

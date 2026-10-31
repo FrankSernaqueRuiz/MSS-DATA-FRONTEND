@@ -1,0 +1,35 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "MSS-DATA | Ingeniería de Software, Datos y Soluciones Digitales",
+  description = "Desarrollo de software a medida, arquitectura de datos y soluciones cloud de alto impacto para potenciar empresas innovadoras."
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <slot />
+  <script>
+    import '../scripts/main.js';
+  </script>
+</body>
+</html>
+
+<style is:global>
+  @import '../styles/main.css';
+  @import '../styles/responsive.css';
+</style>

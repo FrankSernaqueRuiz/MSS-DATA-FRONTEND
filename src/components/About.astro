@@ -1,0 +1,100 @@
+---
+// About Section Component
+---
+<section class="about-section" id="nosotros">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-tag" data-i18n="aboutTag">Acerca de MSS-DATA</span>
+      <h2 class="section-title" data-i18n="aboutTitle">Ingeniería aplicada con enfoque en resultados medibles</h2>
+      <div class="section-divider">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <p class="section-sub" data-i18n="aboutSub">
+        Diseñamos ecosistemas tecnológicos que soportan las operaciones críticas de tu organización.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-visual">
+        <div class="about-canvas-card">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <span class="code-filename">mss-architecture.ts</span>
+            <span style="font-size:0.7rem;color:#64748b;">TypeScript</span>
+          </div>
+          <pre class="code-snippet"><code><span class="code-keyword">interface</span> <span class="code-func">ProjectArchitecture</span> &#123;
+  client: <span class="code-str">'Enterprise Solutions'</span>;
+  stack: [<span class="code-str">'Next.js'</span>, <span class="code-str">'Node.js'</span>, <span class="code-str">'PostgreSQL'</span>];
+  slaUptime: <span class="code-num">99.99</span>;
+  securityTier: <span class="code-str">'Zero-Trust'</span>;
+&#125;
+
+<span class="code-keyword">export async function</span> <span class="code-func">deployPlatform</span>() &#123;
+  <span class="code-comment">// Automatización CI/CD con pruebas unitarias</span>
+  <span class="code-keyword">const</span> status = <span class="code-keyword">await</span> pipeline.execute(&#123;
+    mode: <span class="code-str">'production'</span>,
+    cache: <span class="code-str">'distributed'</span>,
+    zeroDowntime: <span class="code-num">true</span>
+  &#125;);
+  <span class="code-keyword">return</span> status.isHealthy;
+&#125;</code></pre>
+        </div>
+        <div class="about-overlay-badge">
+          <div class="overlay-metric-val">+85</div>
+          <div class="overlay-metric-lbl" data-i18n="heroMetric2Label">Proyectos Implementados</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="about-text-lead" data-i18n="aboutParagraph1">
+          MSS-DATA nació con un propósito claro: eliminar la brecha entre la estrategia de negocio y la ingeniería de software moderna.
+        </p>
+        <p class="about-text-secondary" data-i18n="aboutParagraph2">
+          Nuestro equipo multidisciplinario combina experiencia en desarrollo full-stack, ingeniería de datos, pipelines CI/CD y diseño de interfaces con ergonomía digital.
+        </p>
+        <ul class="about-features-list">
+          <li class="about-feat-item">
+            <div class="check-icon-wrap">
+              <svg class="icon" style="width:14px;height:14px;" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="aboutFeature1">Metodologías ágiles con sprints quincenales y entregables funcionales.</span>
+          </li>
+          <li class="about-feat-item">
+            <div class="check-icon-wrap">
+              <svg class="icon" style="width:14px;height:14px;" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="aboutFeature2">Garantía de rendimiento, auditorías de seguridad y documentación exhaustiva.</span>
+          </li>
+          <li class="about-feat-item">
+            <div class="check-icon-wrap">
+              <svg class="icon" style="width:14px;height:14px;" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span data-i18n="aboutFeature3">Soporte post-despliegue y transferencia de conocimiento al cliente.</span>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn-about-action">
+          <span data-i18n="aboutBtn">Conoce Nuestra Metodología</span>
+          <svg class="icon" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>

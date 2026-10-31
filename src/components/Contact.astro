@@ -1,0 +1,115 @@
+---
+// Contact / Quote Request Section
+---
+<section class="contact-section" id="contacto">
+  <div class="container">
+
+    <div class="contact-card-box">
+
+      <div class="contact-sidebar">
+        <div class="contact-sidebar-top">
+          <span class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;" data-i18n="contactTag">Inicia Tu Proyecto</span>
+          <h3 data-i18n="contactTitle">Hablemos de tus requerimientos técnicos</h3>
+          <p data-i18n="contactSub">Completa el formulario y recibe una propuesta de arquitectura y cronograma estimado en menos de 24 horas.</p>
+          <div class="contact-details-list">
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span>contacto@mssdata.tech</span>
+            </div>
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span>Atención Global Remota</span>
+            </div>
+            <div class="contact-detail-row">
+              <div class="contact-detail-icon">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <span>Tiempo de respuesta: &lt; 24h</span>
+            </div>
+          </div>
+        </div>
+        <div style="font-size:0.8rem;color:rgba(255,255,255,0.7);margin-top:30px;">MSS-DATA Engineering Systems</div>
+      </div>
+
+      <div class="contact-form-pane">
+        <form class="contact-form" id="contactForm">
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" data-i18n="formNameLabel">Nombre Completo</label>
+              <input type="text" class="form-input" required
+                placeholder="Ej. Carlos Mendoza"
+                data-i18n-placeholder="formNamePlaceholder" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="formEmailLabel">Correo Corporativo</label>
+              <input type="email" class="form-input" required
+                placeholder="carlos@empresa.com"
+                data-i18n-placeholder="formEmailPlaceholder" />
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" data-i18n="formServiceLabel">Tipo de Proyecto</label>
+              <select class="form-select">
+                <option data-i18n="formServiceOpt1">Desarrollo Web / Plataforma SaaS</option>
+                <option data-i18n="formServiceOpt2">Aplicación Móvil iOS / Android</option>
+                <option data-i18n="formServiceOpt3">Ingeniería de Datos y Analítica</option>
+                <option data-i18n="formServiceOpt4">Auditoría, Cloud o DevOps</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-i18n="formBudgetLabel">Presupuesto Estimado</label>
+              <select class="form-select">
+                <option data-i18n="formBudgetOpt1">Menos de $5,000 USD</option>
+                <option data-i18n="formBudgetOpt2">$5,000 - $15,000 USD</option>
+                <option data-i18n="formBudgetOpt3">$15,000 - $30,000 USD</option>
+                <option data-i18n="formBudgetOpt4">Más de $30,000 USD</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" data-i18n="formMessageLabel">Detalles del Proyecto</label>
+            <textarea class="form-textarea" required
+              placeholder="Describe los objetivos principales, requerimientos clave y tiempos estimados..."
+              data-i18n-placeholder="formMessagePlaceholder"></textarea>
+          </div>
+
+          <button type="submit" class="btn-form-submit">
+            <span data-i18n="formSubmit">Solicitar Cotización Técnica</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+
+          <div class="form-alert-msg" id="formAlert">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span data-i18n="formSuccess">Mensaje recibido exitosamente. Un ingeniero de MSS-DATA se comunicará contigo a la brevedad.</span>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

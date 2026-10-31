@@ -1,0 +1,35 @@
+---
+// LangModal Component — Language switcher panel
+---
+<div class="lang-modal-backdrop" id="langModal">
+  <div class="lang-panel">
+    <div class="lang-panel-header">
+      <h3 class="lang-panel-title" data-i18n="langSelectorTitle">Seleccionar Idioma</h3>
+      <button class="btn-close-lang" id="closeLangModal" aria-label="Cerrar">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <p class="lang-panel-desc" data-i18n="langSelectorDesc">
+      Elige tu idioma de preferencia para explorar la plataforma.
+    </p>
+    <div class="lang-options-grid">
+      <div class="lang-option-card active" data-lang="es">
+        <div class="lang-option-left">
+          <span class="lang-code-pill">ES</span>
+          <span class="lang-option-name" data-i18n="langEs">Español (ES)</span>
+        </div>
+        <div class="lang-check-radio"></div>
+      </div>
+      <div class="lang-option-card" data-lang="en">
+        <div class="lang-option-left">
+          <span class="lang-code-pill">EN</span>
+          <span class="lang-option-name" data-i18n="langEn">English (US)</span>
+        </div>
+        <div class="lang-check-radio"></div>
+      </div>
+    </div>
+  </div>
+</div>

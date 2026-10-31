@@ -1,0 +1,130 @@
+---
+// Hero Section Component
+---
+<section class="hero-section" id="hero">
+  <div class="hero-grid-pattern"></div>
+  <div class="container">
+    <div class="hero-layout">
+
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span class="hero-badge-dot"></span>
+          <span data-i18n="heroBadge">Ingeniería de Software &amp; Proyectos Digitales</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span data-i18n="heroTitlePart1">Construimos software sólido que impulsa el</span>
+          <span class="highlight" data-i18n="heroTitleHighlight">crecimiento empresarial</span>
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDesc">
+          En MSS-DATA transformamos requerimientos técnicos complejos en productos digitales escalables, arquitecturas de datos seguras y aplicaciones web y móviles de alto rendimiento.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary-hero">
+            <span data-i18n="heroCtaPrimary">Iniciar Proyecto</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#capacidades" class="btn-secondary-hero">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span data-i18n="heroCtaSecondary">Ver Capacidades</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="heroMetric1Value">99.8%</span>
+            <span class="metric-label" data-i18n="heroMetric1Label">Disponibilidad en Producción</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="heroMetric2Value">+85</span>
+            <span class="metric-label" data-i18n="heroMetric2Label">Proyectos Implementados</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number" data-i18n="heroMetric3Value">100%</span>
+            <span class="metric-label" data-i18n="heroMetric3Label">Código Limpio &amp; Documentado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="device-showcase-container">
+
+          <div class="floating-pill-badge pill-top-right">
+            <div class="pill-icon-wrap">
+              <svg class="icon" viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 0.7rem; color: #64748b;" data-i18n="heroPreviewStatus">Sistemas Operativos</div>
+              <div style="font-weight: 700; color: #10b981;">100% Online</div>
+            </div>
+          </div>
+
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="phone-notch">
+                <div class="phone-speaker"></div>
+              </div>
+              <div class="screen-header">
+                <div class="screen-brand">
+                  <svg class="icon" style="width:16px;height:16px;color:#a855f7;" viewBox="0 0 24 24">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                  <span data-i18n="heroPreviewTitle">MSS Data Core</span>
+                </div>
+                <span class="screen-status-badge">v2.4 LTS</span>
+              </div>
+              <div class="screen-body">
+                <div class="screen-metric-card">
+                  <div class="screen-metric-title" data-i18n="heroPreviewMetricUptime">Tiempo de Actividad</div>
+                  <div class="screen-metric-val">
+                    99.98%
+                    <span class="screen-metric-sub">+0.04% vs SLA</span>
+                  </div>
+                  <div class="screen-chart-bars">
+                    <div class="chart-bar" style="height:40%"></div>
+                    <div class="chart-bar" style="height:65%"></div>
+                    <div class="chart-bar" style="height:50%"></div>
+                    <div class="chart-bar" style="height:80%"></div>
+                    <div class="chart-bar" style="height:95%"></div>
+                    <div class="chart-bar active" style="height:100%"></div>
+                  </div>
+                </div>
+                <div class="screen-terminal-box">
+                  <div class="term-line-ok">$ mss-pipeline deploy --env=prod</div>
+                  <div class="term-line-success">&gt; Build verified: 0 vulnerabilities</div>
+                  <div class="term-line-success">&gt; Microservices synchronized (24ms)</div>
+                  <div style="color:#64748b">&gt; Real-time streaming operational</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-pill-badge pill-bottom-left">
+            <div class="pill-icon-wrap" style="background:#ecfdf5;color:#10b981;">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:0.8rem;color:#0f172a;" data-i18n="heroPreviewDeploy">Despliegue Continuo</div>
+              <div style="font-size:0.68rem;color:#64748b;" data-i18n="heroPreviewMetricSec">Cifrado TLS 1.3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

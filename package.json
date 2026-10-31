@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Landing page corporativa para MSS-DATA — Ingeniería de software, datos y soluciones digitales. Bilingüe (ES/EN), sin frameworks, vanilla HTML/CSS/JS.",
   "scripts": {
-    "dev": "npx -y serve . -l 3000",
-    "start": "npx -y serve . -l 3000"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "keywords": [
     "landing-page",
@@ -26,5 +29,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "astro": "^5.18.2"
   }
 }
