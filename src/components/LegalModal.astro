@@ -1,0 +1,55 @@
+---
+// LegalModal Component — Privacy Policy & Terms Modal
+---
+<div class="legal-modal-backdrop" id="legalModal">
+  <div class="legal-panel">
+    <div class="legal-panel-header">
+      <div class="legal-badge">MSS-DATA LEGAL &amp; PRIVACIDAD</div>
+      <button class="btn-close-legal" id="closeLegalModal" aria-label="Cerrar">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="legal-panel-body">
+      <h3 id="legalModalTitle">Política de Privacidad y Tratamiento de Datos</h3>
+      <p class="legal-intro">
+        En cumplimiento con la <strong>Ley de Protección de Datos Personales (Ley N° 29733 de la República del Perú)</strong> y estándares internacionales de ciberseguridad, <strong>MSS-DATA</strong> (sitio web: <code>https://www.mssdataperu.com</code>) informa a sus usuarios sobre las condiciones de tratamiento de su información.
+      </p>
+
+      <div class="legal-section-block">
+        <h4>1. Información Recopilada</h4>
+        <p>A través de nuestro formulario de contacto o canales de comunicación técnica, recopilamos únicamente información corporativa necesaria: Nombre, Correo Electrónico Corporativo, Alcance del Proyecto y Presupuesto referencial.</p>
+      </div>
+
+      <div class="legal-section-block">
+        <h4>2. Finalidad del Tratamiento</h4>
+        <p>Los datos suministrados se utilizarán con el propósito exclusivo de:</p>
+        <ul>
+          <li>Elaborar propuestas técnicas, estimaciones presupuestarias y arquitecturas de software requeridas por el cliente.</li>
+          <li>Establecer contacto directo entre nuestros consultores de ingeniería y el remitente.</li>
+          <li>Garantizar la confidencialidad técnica de las soluciones consultadas.</li>
+        </ul>
+      </div>
+
+      <div class="legal-section-block">
+        <h4>3. Confidencialidad y No Transferencia</h4>
+        <p><strong>MSS-DATA no vende, arrienda, comercializa ni transfiere</strong> sus datos personales o de contacto a terceros bajo ninguna circunstancia sin su expreso consentimiento previo.</p>
+      </div>
+
+      <div class="legal-section-block">
+        <h4>4. Medidas de Seguridad de la Información</h4>
+        <p>Implementamos estándares de cifrado TLS/HTTPS en tránsito, almacenamiento protegido y principios de mínimo privilegio de acceso para preservar la integridad y confidencialidad de la información enviada.</p>
+      </div>
+
+      <div class="legal-section-block">
+        <h4>5. Ejercicio de Derechos ARCO</h4>
+        <p>Cualquier titular de datos puede solicitar en cualquier momento el acceso, rectificación, cancelación u oposición al tratamiento de sus datos escribiendo directamente a nuestro canal oficial: <strong>contacto@mssdataperu.com</strong>.</p>
+      </div>
+    </div>
+    <div class="legal-panel-footer">
+      <button class="btn-primary-hero" id="confirmLegalModal" style="padding: 10px 24px; font-size: 0.9rem;" data-i18n="legalModalClose">Entendido y Cerrar</button>
+    </div>
+  </div>
+</div>
