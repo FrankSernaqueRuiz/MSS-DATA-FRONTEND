@@ -536,3 +536,32 @@
     font-size: 1.3rem;
   }
 }
+
+/* ==================================================================
+   WHATSAPP + FORMULARIO — adaptación a móvil
+   ================================================================== */
+
+@media (max-width: 768px) {
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn-form-submit,
+  .btn-form-whatsapp {
+    width: 100%;
+  }
+
+  .btn-form-whatsapp {
+    height: 52px;
+  }
+
+  .wa-fab-root {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .wa-panel {
+    width: calc(100vw - 32px);
+    max-width: 320px;
+  }
+}

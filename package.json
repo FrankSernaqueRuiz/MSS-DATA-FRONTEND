@@ -1,7 +1,7 @@
 {
   "name": "mss-data-landing",
   "version": "1.0.0",
-  "description": "Landing page corporativa para MSS-DATA — Ingeniería de software, datos y soluciones digitales. Bilingüe (ES/EN), sin frameworks, vanilla HTML/CSS/JS.",
+  "description": "Landing page corporativa para MSS-DATA — Ingeniería de software, datos y soluciones digitales. Construida con Astro, bilingüe (ES/EN), sitio estático sin backend.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

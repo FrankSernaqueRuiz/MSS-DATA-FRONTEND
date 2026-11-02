@@ -112,6 +112,65 @@ npm run preview
 
 ---
 
+## Contacto y Captación de Leads (sin backend)
+
+El formulario envía de verdad. Hay dos salidas, ambas sin servidor ni base de datos:
+
+### A. Correo electrónico — Web3Forms
+
+1. Entra a [web3forms.com](https://web3forms.com) e indica el correo que recibirá los leads.
+2. Copia la **Access Key** que llega por correo y crea un archivo `.env` en la raíz:
+
+   ```bash
+   PUBLIC_WEB3FORMS_KEY=tu-access-key-aqui
+   ```
+
+3. Reinicia `npm run dev`. Listo.
+
+**Sin clave configurada el formulario no se rompe:** cae automáticamente al modo `mailto`,
+que abre el cliente de correo del visitante con todos los campos ya redactados.
+
+El plan gratuito de Web3Forms cubre 250 envíos al mes, suficiente de sobra para empezar.
+
+#### Importante: un solo destinatario en el plan gratuito
+
+El plan gratis envía a **una sola dirección**. El campo `ccemail` es exclusivo del plan Pro.
+Para que los tres socios reciban cada lead sin pagar, hay dos caminos:
+
+| Opción | Cómo | Ventaja |
+|---|---|---|
+| **Grupo de Google** (recomendado) | Crear un grupo en [groups.google.com](https://groups.google.com), agregar a los tres y registrar esa dirección en Web3Forms | Entra y sale gente sin tocar el código |
+| **Reenvío en Gmail** | En el Gmail que recibe: Configuración → Reenvío, verificar las otras dos direcciones y crear un filtro | No hay que crear nada nuevo |
+
+Si algún día pagan Pro, basta con poner `WEB3FORMS_PRO = true` en `src/config/contact.js`
+y los tres correos entran como CC automáticamente.
+
+### B. WhatsApp
+
+- **Botón "Enviarlo por WhatsApp"** dentro del formulario: arma el mensaje con todos los
+  campos que el visitante llenó y abre el chat listo para mandar.
+- **Botón flotante** (esquina inferior derecha): panel con los tres socios para elegir
+  con quién hablar directamente.
+- Los leads del formulario **rotan entre los tres números** de forma pareja, para que no
+  le caigan siempre a la misma persona.
+
+### Dónde se cambia todo esto
+
+Un solo archivo: **`src/config/contact.js`** — correos, números de WhatsApp, nombres de
+los socios y horario de atención. No hay que tocar componentes.
+
+### Protecciones incluidas
+
+- **Honeypot** anti-spam (campo invisible que solo los bots rellenan).
+- **Casilla de consentimiento** obligatoria, requerida por la Ley 29733 de Protección de
+  Datos Personales del Perú.
+- Validación nativa del navegador y estados reales de carga, éxito y error.
+
+> **Pendiente:** publicar la Política de Privacidad. Hoy los enlaces del footer apuntan a
+> `#contacto`. Con un formulario que recoge datos personales, esa política es obligatoria.
+
+---
+
 ## Despliegue en Producción
 
 Al ejecutar:
