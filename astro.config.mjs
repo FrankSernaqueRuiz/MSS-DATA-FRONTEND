@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://github.com/Alessandro-Hacker/MSS-DATA',
+  site: 'https://www.mssdataperu.com/',
   compressHTML: true,
 });
