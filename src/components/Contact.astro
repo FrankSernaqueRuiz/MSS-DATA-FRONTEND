@@ -91,6 +91,23 @@
               data-i18n-placeholder="formMessagePlaceholder"></textarea>
           </div>
 
+          <!-- Anti-Spam Bot Trap (Honeypot) - Hidden from humans -->
+          <div style="opacity: 0; position: absolute; top: 0; left: 0; height: 0; width: 0; z-index: -1; overflow: hidden;" aria-hidden="true">
+            <label for="website_security_hp">Leave this empty</label>
+            <input type="text" id="website_security_hp" name="website_security_hp" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <!-- Privacy & Data Protection Checkbox -->
+          <div class="form-privacy-group">
+            <label class="form-privacy-label">
+              <input type="checkbox" id="privacyConsentCheckbox" required class="form-checkbox" />
+              <span>
+                <span data-i18n="formPrivacyConsent">He leído y acepto la</span>
+                <a href="#privacy" id="openPrivacyLink" class="privacy-link" data-i18n="formPrivacyLink">Política de Privacidad y Tratamiento de Datos</a>.
+              </span>
+            </label>
+          </div>
+
           <button type="submit" class="btn-form-submit">
             <span data-i18n="formSubmit">Solicitar Cotización Técnica</span>
             <svg class="icon" viewBox="0 0 24 24">

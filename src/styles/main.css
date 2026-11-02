@@ -1731,3 +1731,166 @@ button {
   background: var(--color-primary);
   border-radius: 50%;
 }
+
+/* ==========================================================================
+   Form Privacy & Legal Modal
+   ========================================================================== */
+.form-privacy-group {
+  margin: 18px 0 22px 0;
+}
+
+.form-privacy-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #475569;
+  cursor: pointer;
+  line-height: 1.45;
+}
+
+.form-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.privacy-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.privacy-link:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Legal Modal */
+.legal-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.legal-modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.legal-panel {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+  border: 1px solid var(--border-light);
+}
+
+.legal-modal-backdrop.open .legal-panel {
+  transform: translateY(0);
+}
+
+.legal-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.legal-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.btn-close-legal {
+  background: #f1f5f9;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-close-legal:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.legal-panel-body {
+  padding: 26px;
+  overflow-y: auto;
+  color: #334155;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.legal-panel-body h3 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+.legal-intro {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.legal-section-block {
+  margin-bottom: 18px;
+}
+
+.legal-section-block h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #1e293b;
+}
+
+.legal-section-block ul {
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.legal-section-block li {
+  margin-bottom: 4px;
+}
+
+.legal-panel-footer {
+  padding: 18px 26px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: flex-end;
+  background: #f8fafc;
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}

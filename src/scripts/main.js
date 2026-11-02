@@ -9,6 +9,7 @@ const state = {
 let navbarWrapper, langModal, langOpenBtns, langCloseBtn;
 let langOptions, currentLangLabel, mobileMenuBtn, navMenu;
 let contactForm, formAlert;
+let legalModal, openPrivacyLinks, closeLegalBtns, honeypotInput;
 
 function queryElements() {
   navbarWrapper = document.getElementById('navbarWrapper');
@@ -21,6 +22,10 @@ function queryElements() {
   navMenu = document.getElementById('navMenu');
   contactForm = document.getElementById('contactForm');
   formAlert = document.getElementById('formAlert');
+  legalModal = document.getElementById('legalModal');
+  openPrivacyLinks = document.querySelectorAll('#openPrivacyLink, #footerPrivacyLink, #footerTermsLink, #footerSecurityLink');
+  closeLegalBtns = document.querySelectorAll('#closeLegalModal, #confirmLegalModal');
+  honeypotInput = document.getElementById('website_security_hp');
 }
 
 // Update all translated elements
@@ -114,6 +119,13 @@ function initContactForm() {
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // Anti-Spam Bot Honeypot Check
+    if (honeypotInput && honeypotInput.value.trim() !== '') {
+      console.warn('Bot submission rejected.');
+      return;
+    }
+
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalHTML = submitBtn.innerHTML;
 
@@ -132,6 +144,31 @@ function initContactForm() {
         setTimeout(() => { formAlert.style.display = 'none'; }, 5000);
       }
     }, 700);
+  });
+}
+
+function initLegalModal() {
+  openPrivacyLinks?.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      legalModal?.classList.add('open');
+    });
+  });
+
+  closeLegalBtns?.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      legalModal?.classList.remove('open');
+    });
+  });
+
+  legalModal?.addEventListener('click', (e) => {
+    if (e.target === legalModal) legalModal.classList.remove('open');
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && legalModal?.classList.contains('open')) {
+      legalModal.classList.remove('open');
+    }
   });
 }
 
@@ -205,6 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguagePanel();
   initMobileMenu();
   initContactForm();
+  initLegalModal();
   initSmoothNavigation();
   initScrollSpy();
 });
