@@ -135,6 +135,47 @@ function initContactForm() {
   });
 }
 
+function initSmoothNavigation() {
+  const navTargets = document.querySelectorAll('a[data-target]');
+  navTargets.forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      const targetId = anchor.getAttribute('data-target');
+      const targetElem = document.getElementById(targetId);
+      if (targetElem) {
+        e.preventDefault();
+        const headerOffset = 75;
+        const elementPosition = targetElem.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        const newPath = targetId === 'inicio' ? '/inicio' : `/${targetId}`;
+        window.history.pushState(null, '', newPath);
+      }
+    });
+  });
+
+  // Check initial path on load to scroll if directly arriving at /servicios, /contacto, etc.
+  const pathSegment = window.location.pathname.replace(/^\/+|\/+$/g, '');
+  if (pathSegment) {
+    const targetElem = document.getElementById(pathSegment);
+    if (targetElem) {
+      setTimeout(() => {
+        const headerOffset = 75;
+        const elementPosition = targetElem.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  }
+}
+
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -150,7 +191,8 @@ function initScrollSpy() {
     });
 
     navLinks.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      const target = link.getAttribute('data-target') || link.getAttribute('href')?.replace('/', '');
+      link.classList.toggle('active', target === current);
     });
   });
 }
@@ -163,5 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguagePanel();
   initMobileMenu();
   initContactForm();
+  initSmoothNavigation();
   initScrollSpy();
 });
