@@ -1,12 +1,21 @@
-# MSS-DATA — Landing Page Corporativa (Astro)
+# MSS-DATA Perú — Landing Page (Astro)
 
-Landing page institucional para **MSS-DATA**, empresa especializada en desarrollo de software a medida, arquitectura de datos y soluciones cloud de alto impacto. Desarrollada con **[Astro](https://astro.build/)**, estructura modular por componentes, panel bilingüe instantáneo (ES/EN) y diseño moderno y responsivo sin emojis.
+Landing page para **MSS DATA Perú**, emprendimiento enfocado en el desarrollo de aplicaciones web personalizadas que se adaptan a las necesidades de cada cliente y modernización de sistemas en Piura. Desarrollada con **[Astro](https://astro.build/)**, estructura modular por componentes, panel bilingüe (ES/EN) y diseño moderno y responsivo.
 
 ---
 
 ## Vista Previa y Desarrollo Local
 
-> Inicia el entorno local con `npm run dev` y accede a `http://localhost:4321`.
+```bash
+# 1. Instalar dependencias
+npm install
+
+# 2. Iniciar servidor de desarrollo en http://localhost:4321
+npm run dev
+
+# 3. Compilar proyecto
+npm run build
+```
 
 ---
 
@@ -15,7 +24,7 @@ Landing page institucional para **MSS-DATA**, empresa especializada en desarroll
 | Capa | Tecnología |
 |---|---|
 | **Framework** | [Astro](https://astro.build/) (v5.x) |
-| **Componentes** | Componentes `.astro` modulares y reactividad pura |
+| **Componentes** | Componentes `.astro` modulares |
 | **Estilos** | CSS moderno con variables, flexbox, CSS grid y animaciones fluidas |
 | **Lógica e i18n** | JavaScript modular con diccionario de traducción en `src/data/` |
 | **Tipografía** | [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) |
@@ -24,8 +33,6 @@ Landing page institucional para **MSS-DATA**, empresa especializada en desarroll
 ---
 
 ## Estructura del Proyecto
-
-El repositorio sigue la arquitectura oficial recomendada para proyectos Astro:
 
 ```text
 frontend-mssdata/
@@ -50,7 +57,7 @@ frontend-mssdata/
 │   ├── layouts/
 │   │   └── BaseLayout.astro    # Plantilla HTML base, SEO e importación de assets
 │   ├── pages/
-│   │   └── index.astro         # Página principal (Single Page Application)
+│   │   └── index.astro         # Página principal
 │   ├── scripts/
 │   │   └── main.js             # Lógica cliente: i18n, modal, navbar y formularios
 │   └── styles/
@@ -67,76 +74,28 @@ frontend-mssdata/
 
 ---
 
-## Scripts Disponibles
-
-En la raíz del proyecto puedes ejecutar:
-
-```bash
-# Instalar dependencias
-npm install
-
-# Iniciar servidor de desarrollo en http://localhost:4321
-npm run dev
-
-# Compilar para producción (genera la carpeta dist/)
-npm run build
-
-# Previsualizar la versión de producción localmente
-npm run preview
-```
-
----
-
 ## Funcionalidades Destacadas
 
 ### 1. Panel de Cambio de Idioma (i18n)
 - Soporte nativo para **Español (ES)** e **Inglés (EN)**.
 - Modal accesible desde la barra de navegación y el pie de página.
 - Persistencia automática de la preferencia del usuario en `localStorage`.
-- Cambio de textos dinámico e instantáneo en tiempo real.
 
 ### 2. Secciones Modulares
-- **Hero:** Propuesta de valor, métricas operativas y mockup 3D de dashboard con badges flotantes.
-- **Highlights:** 3 pilares clave superpuestos con elevación y sombras suaves.
-- **Nosotros:** Filosofía técnica, arquitectura de código y trayectoria.
-- **Capacidades:** Distribución flanqueada de servicios de ingeniería de datos y software.
-- **Tech Stack:** Ecosistema tecnológico moderno clasificado.
-- **Proyectos:** Casos de estudio en sectores críticos (Fintech, Logística y Salud).
-- **Contacto:** Formulario estructurado para cotizaciones con feedback visual integrado.
-
-### 3. Principios de Diseño
-- Estética cuidada con paleta en tonos oscuros y púrpuras de contraste.
-- Cero emojis para mantener un perfil 100% corporativo e ingenieril.
-- Efectos de blur / frosted glass al hacer scroll en la barra de navegación.
-- Totalmente responsivo para pantallas ultra-wide, laptops, tablets y móviles.
-
----
-
-## Despliegue en Producción
-
-Al ejecutar:
-
-```bash
-npm run build
-```
-
-Astro compila el proyecto en el directorio `dist/`. Este directorio puede desplegarse en cualquier servicio de hosting moderno:
-- **Vercel** (`npx vercel`)
-- **Netlify** (`npx netlify deploy --prod --dir=dist`)
-- **Cloudflare Pages**
-- **GitHub Pages** (usando GitHub Actions o publicando la carpeta `dist`)
-
----
-
-## Licencia
-
-Distribuido bajo la Licencia [MIT](LICENSE).
+- **Hero:** Propuesta de valor, métricas y mockup de dashboard.
+- **Highlights:** Pilares y enfoques de servicio.
+- **Nosotros:** Historia, visión local en Piura y metodología.
+- **Capacidades:** Servicios de ingeniería y modernización.
+- **Tech Stack:** Ecosistema tecnológico y herramientas.
+- **Proyectos:** Casos de estudio implementados.
+- **Contacto:** Formulario de cotización e información de contacto.
 
 ---
 
 ## Contacto
 
-**MSS-DATA**  
+**MSS DATA Perú**  
 Sitio Web: [https://www.mssdataperu.com/](https://www.mssdataperu.com/)  
 Email: `contacto@mssdataperu.com`
+Piura, Perú
 
